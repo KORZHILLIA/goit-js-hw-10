@@ -16,10 +16,10 @@ const countryListRender = arr => {
   countryListContainer.insertAdjacentHTML('beforeend', getCountryList(arr));
 };
 
-countryInfoRender = arr => {
+const countryInfoRender = obj => {
   countryInfoContainer.innerHTML = '';
   countryListContainer.innerHTML = '';
-  countryInfoContainer.insertAdjacentHTML('beforeend', getCountryInfo(arr));
+  countryInfoContainer.insertAdjacentHTML('beforeend', getCountryInfo(obj));
 };
 
 const decideWhatMarkup = arr => {
