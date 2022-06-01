@@ -23,10 +23,8 @@ const searchHandler = event => {
       if (res.length > 10) {
         countryListContainer.innerHTML = '';
         countryInfoContainer.innerHTML = '';
-        console.log(
-          Notify.info(
-            'Too many matches found. Please enter a more specific name.'
-          )
+        Notify.info(
+          'Too many matches found. Please enter a more specific name.'
         );
         return;
       }
