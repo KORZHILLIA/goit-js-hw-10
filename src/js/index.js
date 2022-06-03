@@ -12,7 +12,7 @@ const DEBOUNCE_DELAY = 300;
 const input = document.querySelector('#search-box');
 
 const searchHandler = event => {
-  const query = event.target.value;
+  const query = event.target.value.trim();
   if (query === '') {
     countryListContainer.innerHTML = '';
     countryInfoContainer.innerHTML = '';
